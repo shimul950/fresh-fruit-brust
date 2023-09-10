@@ -37,54 +37,55 @@
 </head>
 
 <body class="lato-font">
-    <header class="my-12 lg:px-60">
+    <header class="my-12 mr-[-100px] lg:mx-60">
         <!-- nav section -->
         <nav>
             <div class="navbar bg-[#F85559] rounded-full px-8">
-                <div class="navbar-start">
-                    <div class="dropdown text-[#FFFFFF]">
-                        <label tabindex="0" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </label>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <div class="navbar-start">
+                        <div class="dropdown text-[#FFFFFF]">
+                            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </label>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Home</a></li>
+                                <li><a>About Us</a> </li>
+                                <li><a>Shop</a></li>
+                                <li><a>All Fruits</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex">
+                            <img src="images/logo.png" alt="">
+                            <a class="btn btn-ghost normal-case text-2xl lg:text-4xl font-extrabold text-white">Fruit Burst</a>
+                        </div>
+                    </div>
+    
+                    <div class="navbar-center hidden lg:flex text-[#FFFFFF]">
+                        <ul class="menu menu-horizontal px-1">
                             <li><a>Home</a></li>
                             <li><a>About Us</a> </li>
                             <li><a>Shop</a></li>
                             <li><a>All Fruits</a></li>
                         </ul>
                     </div>
-                    <div class="flex">
-                        <img src="images/logo.png" alt="">
-                        <a class="btn btn-ghost normal-case text-4xl font-extrabold text-white">Fruit Burst</a>
-                    </div>
-                </div>
-
-                <div class="navbar-center hidden lg:flex text-[#FFFFFF]">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a> </li>
-                        <li><a>Shop</a></li>
-                        <li><a>All Fruits</a></li>
-                    </ul>
-                </div>
 
                 <!-- input text -->
-                <div class="navbar-end">
+                <div class="navbar-end hidden lg:flex">
                     <input type="text" placeholder="Search here"
                         class="input input-bordered input-sm w-full max-w-xs rounded-full" />
                     <img class="relative right-10" src="images/Frame.svg" alt="">
 
                 </div>
+               
             </div>
         </nav>
 
         <!-- slider section -->
-        <div class="carousel w-full my-12">
+        <div class="carousel w-full my-8 lg:my-12 ">
 
             <!-- slide1 -->
             <div id="slide1" class="carousel-item relative w-full">
@@ -92,7 +93,7 @@
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content">
                         <div class="max-w-md">
-                            <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <h1 class="mb-5 text-4xl lg:text-5xl  font-bold">Exotic tastes at your doorstep</h1>
                             <p class="mb-5">We supply highly quality organic products</p>
                             <button class="btn text-white border-none bg-[#F85559]">Shop Now</button>
                         </div>
@@ -110,7 +111,7 @@
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content">
                         <div class="max-w-md">
-                            <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <h1 class="mb-5 text-4xl lg:text-5xl  font-bold">Exotic tastes at your doorstep</h1>
                             <p class="mb-5">We supply highly quality organic products</p>
                             <button class="btn text-white border-none bg-[#F85559]">Shop Now</button>
                         </div>
@@ -128,7 +129,7 @@
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content">
                         <div class="max-w-md">
-                            <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <h1 class="mb-5 text-4xl lg:text-5xl  font-bold">Exotic tastes at your doorstep</h1>
                             <p class="mb-5">We supply highly quality organic products</p>
                             <button class="btn text-white border-none bg-[#F85559]">Shop Now</button>
                         </div>
@@ -146,7 +147,7 @@
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content">
                         <div class="max-w-md">
-                            <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <h1 class="mb-5 text-4xl lg:text-5xl font-bold">Exotic tastes at your doorstep</h1>
                             <p class="mb-5">We supply highly quality organic products</p>
                             <button class="btn text-white border-none bg-[#F85559]">Shop Now</button>
                         </div>
@@ -159,9 +160,97 @@
             </div>
         </div>
 
+        <!-- header highlight div -->
 
+        <div class="hidden lg:flex gird grid-rows-1 relative left-[70px] bottom-[120px]">
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-8 pt-10">
+                  <img src="/images/fruit1.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Grapes</h2>
+                </div>
+              </div>
+
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-8 pt-10">
+                  <img src="/images/fruit2.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Orange</h2>
+                </div>
+              </div>
+
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-8 pt-10">
+                  <img src="/images/fruit3.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Mango</h2>
+                </div>
+              </div>
+
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-8 pt-10">
+                  <img src="/images/fruit4.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Strawberry</h2>
+                </div>
+              </div>
+
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-8 pt-10">
+                  <img src="/images/fruit5.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Pomegranate</h2>
+                </div>
+              </div>
+        </div>
     </header>
+
+
     <main>
+        <!-- deal section -->
+        <section class="my-12 lg:mt-[-300px] lg:p-60">
+            <div class="flex lg:justify-between">
+                <div class="">
+                    <h2 class="text-5xl font-extrabold">Deal of the day</h2>
+                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="">
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col p-2 bg-[#f9a3a4] rounded-box text-neutral-content">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:15;"></span>
+                          </span>
+                          days
+                        </div> 
+                        <div class="flex flex-col p-2 bg-[#f9a3a4] rounded-box text-neutral-content">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:10;"></span>
+                          </span>
+                          hours
+                        </div> 
+                        <div class="flex flex-col p-2 bg-[#f9a3a4] rounded-box text-neutral-content">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:24;"></span>
+                          </span>
+                          min
+                        </div> 
+                        <div class="flex flex-col p-2 bg-[#f9a3a4] rounded-box text-neutral-content">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:12;"></span>
+                          </span>
+                          sec
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+
 
     </main>
     <footer>
